@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Maafin Aku</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Gaegu:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="app">
+
+  <section class="screen center" id="s-ask">
+    <h1 id="askTitle"></h1>
+    <div class="art bob" id="askArt"></div>
+    <div class="row">
+      <button class="pill" id="yes" type="button"></button>
+      <button class="pill" id="no" type="button"></button>
+    </div>
+    <p class="note" id="askNote"></p>
+  </section>
+
+  <section class="screen center" id="s-angry" hidden>
+    <h1 id="angryTitle"></h1>
+    <div class="art" id="angryArt"></div>
+    <button class="pill" id="again" type="button"></button>
+  </section>
+
+  <section class="screen center" id="s-gate" hidden>
+    <h1 id="gateTitle"></h1>
+    <p class="sub" id="gateSub"></p>
+    <div class="art bob" id="gateArt" style="margin-block:-6px"></div>
+    <form class="gate" id="codeForm" novalidate autocomplete="off">
+      <div class="codewrap" id="codeWrap">
+        <div class="boxes" id="boxes" aria-hidden="true"></div>
+        <input id="code" type="text" maxlength="12" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Kata rahasia">
+      </div>
+      <button class="pill" type="submit" id="gateBtn"></button>
+      <p class="gate-msg" id="gateMsg" aria-live="polite"></p>
+      <p class="gate-hint" id="hintBox"></p>
+      <button class="link" type="button" id="hintBtn">Minta petunjuk</button>
+    </form>
+  </section>
+
+  <section class="screen center" id="s-gifts" hidden>
+    <h1 id="giftsTitle"></h1>
+    <div class="gifts" id="gifts"></div>
+    <p class="note" id="giftNote"></p>
+    <button class="link" id="replay" type="button" hidden></button>
+  </section>
+
+  <section class="screen page" id="s-song" hidden>
+    <button class="back" type="button" data-back>&larr; Kembali</button>
+    <div class="twocol song" id="songWrap">
+      <div id="songMount"></div>
+      <div class="letter" id="songLetter"></div>
+    </div>
+  </section>
+
+  <section class="screen page" id="s-collage" hidden>
+    <button class="back" type="button" data-back>&larr; Kembali</button>
+    <h2 class="scrap-title" id="scrapTitle"></h2>
+    <p class="note" style="text-align:left">Geser stikernya, ketuk kotak foto untuk memilih fotomu</p>
+    <div class="tools">
+      <button class="mini" type="button" id="shuffleBtn">Acak stiker</button>
+      <button class="mini" type="button" id="addBtn">Tambah bunga</button>
+      <button class="mini" type="button" id="resetBtn">Rapikan</button>
+    </div>
+    <div class="collage" id="collage"></div>
+  </section>
+
+  <section class="screen page" id="s-anniv" hidden>
+    <button class="back" type="button" data-back>&larr; Kembali</button>
+    <div class="twocol anniv" id="annivWrap">
+      <div>
+        <div class="chip" id="annivCount" hidden>
+          <div class="big"><span id="cNum">0</span><span id="cUnit">hari bersama</span></div>
+          <span id="cYmd"></span>
+        </div>
+        <div class="letter" id="annivLetter" style="margin-top:16px"></div>
+        <p class="skiphint" id="skipHint" hidden>Ketuk surat untuk langsung membaca semuanya</p>
+        <div class="hug" id="hugWrap" hidden>
+          <button class="pill" id="hug" type="button">Kirim pelukan</button>
+          <p class="note" id="hugNote"></p>
+        </div>
+      </div>
+      <div class="annivside" id="annivSide">
+        <figure class="polaroid" id="polaroid" style="margin:0"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen page" id="s-bloom" hidden>
+    <button class="back" type="button" data-back>&larr; Kembali</button>
+    <div class="center bloomstage">
+      <p class="note" id="bloomHint"></p>
+      <button class="flowerbtn" id="flowerBtn" type="button" aria-label="Sentuh kuncup bunga">
+        <svg id="flowerSvg" viewBox="0 0 300 420" aria-hidden="true"></svg>
+      </button>
+      <div class="bloomtext" id="bloomText" hidden>
+        <h2>Flower for you</h2>
+        <p>I love you so much</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="sky" aria-hidden="true"></div>
+<div id="fx" aria-hidden="true"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<button id="musicBtn" class="music" type="button" hidden aria-pressed="false" aria-label="Matikan musik"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="3" fill="currentColor"/><circle cx="17.5" cy="16" r="3" fill="currentColor"/></svg><i></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
