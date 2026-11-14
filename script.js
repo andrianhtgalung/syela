@@ -13,17 +13,17 @@ var CONFIG = {
   music: "lagu.mp3",
 
   ask: {
-    title: "Maafin aku, ya?",
-    yes: "MAAFIN", no: "NGGAK",
-    noGone: "Tombol NGGAK sudah disita."
+    title: "Maafin aku, ya cayangku",
+    yes: "MAAFIN", no: "GAMAU",
+    noGone: "Tombol GAMAU nya udah aku buang."
   },
-  angry: ["Hmph! Padahal aku udah minta maaf...", "Sekali lagi pencet NGGAK, aku nangis lho...", "Aku sedih beneran nih...", "Oke. NGGAK-nya aku sita. Maafin ya?"],
+  angry: ["Kok gituuu...", "Ihhh...", "Aku sedih beneran nih...", "Oke. GAMAU-nya aku buang. Maafin ya?"],
   again: "COBA LAGI",
 
   /* Kalimat yang muncul saat karakter diketuk */
   say: {
     ask: ["Maafin aku dong...", "Aku sayang kamu", "Pencet MAAFIN ya!", "Jangan pencet NGGAK..."],
-    angry: ["Hmph!", "Aku sedih...", "Pencet COBA LAGI dong"],
+    angry: ["NOOO!", "Aku sedih...", "Pencet COBA LAGI dong"],
     gate: ["Ayo tebak!", "Pikirin pelan-pelan", "Aku tahu kamu bisa"]
   },
 
@@ -41,7 +41,7 @@ var CONFIG = {
     hints: [
       "Petunjuk 1: katanya ada 6 huruf.",
       "Petunjuk 2: huruf pertamanya W.",
-      "Petunjuk 3: bunyinya 'wi' yang diulang tiga kali."
+      "Petunjuk 3: huruf terakhirnya I."
     ],
     hintsDone: "Petunjuk habis, kamu pasti ingat!"
   },
@@ -59,9 +59,9 @@ var CONFIG = {
   letterSong: {
     title: "Lagu ini buat kamu",
     paras: [
-      "Aku nggak pandai merangkai kata kalau lagi salah, jadi aku pilih lagu ini untuk mewakili perasaanku. Setiap kali mendengarnya, aku ingat betapa berharganya kamu buat aku.",
-      "Aku sadar aku sudah bikin kamu sedih. Dan itu hal terakhir yang pernah mau aku lakukan.",
-      "Kalau kamu dengarkan lagu ini sampai habis, anggap saja itu aku yang lagi bilang: maafin aku."
+      "im not good at making words so i pick this song for you becauseee... i love you so muchh.",
+      "i know i always make you sad, but i promise i will not do that again.",
+      "Kalau kamu dengarkan lagu ini sampai habis, anggap saja itu aku yang lagi bilang: maafin aku cayangkuu, love youu."
     ]
   },
 
@@ -78,7 +78,7 @@ var CONFIG = {
     sign: "dengan sayang dan penyesalan, Aku",
     polaroidCaption: "kamu, kesayanganku",
     hug: "KIRIM PELUKAN",
-    hugNote: ["Pelukan terkirim. Aku sayang kamu.", "Pelukan kedua! Boleh minta lagi.", "Pelukan erat sekali. Maafin aku ya."]
+    hugNote: ["Pelukan terkirim. Aku sayang kamu.", "Pelukan kedua! maw lagi.", " kuat kali peluknyaa. Maafin aku ya."]
   },
 
   bloom: {
